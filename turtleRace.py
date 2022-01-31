@@ -5,7 +5,7 @@ class Runner():
     __customes = ('turtle', 'fish', 'prawn', 'moray', 'octopus')
     
     def __init__(self, x=0, y=0):
-        ixCustome = random.randint(0, 4)
+        ixCustome = random.randint(0, 4) #crea 4 personajes aleatorios de los png dados
         
         self.custome = pygame.image.load("images/{}.png".format(self.__customes[ixCustome]))
         self.position = [x,y]
